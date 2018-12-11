@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Hash Storage Demo</title>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <br>
+        <h1>Hash Storage Demo</h1>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="create_message.html">Create Contract with Message Input</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="create_contract_with_file.html">Create Contract with File</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="view_contract.html">View Contracts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="update_contract.html">Update Contracts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="verify_message.html">Verify Message</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Verify File</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="view_transaction_info.html">View Transaction Info.</a>
+            </li>
+        </ul>
+
+        <br>
+
+
+        <form id="form">
+            <h4>Input Contract Address</h4>
+            <input class="form-control" aria-label="With textarea" id="contract_address" name="contract_address" required></input> <br>
+
+            <h4>Input File</h4>
+            <input type="file" class="form-control-file" id="input_file" name="input_file" /><br>
+            <button type="submit" class="btn btn-primary">Verify</button>
+        </form>
+
+        <br>
+        <div id="isMatch"></div>
+        <div id="output_table"></div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="script/verify_file.js"></script>
+    <script src="script/sha1.js"></script>
+</body>
+
+</html>
